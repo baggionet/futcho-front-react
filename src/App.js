@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Dashboard from './container';
+import Dashboard from './container/index';
 import Login from './pages/Login';
 
-import { Route, Switch, HashRouter, BrowserRouter} from 'react-router-dom';
+import { Route, Switch, HashRouter} from 'react-router-dom';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route
           path="/"
           name="Login" exact
-          render={(props) => <Login/>}
+          render={(props) => <Login {...props}/>}
         />
       </Switch>
     </HashRouter>

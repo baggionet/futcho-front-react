@@ -2,9 +2,10 @@ import * as React from 'react';
 import './css/login.css';
 
 
-export default function () {
+export default function ({ history }) {
     return (
-        <div className="container">
+        <div className="container-login">
+            
             <div className="container-form">
                 <h1>Inicio de sesion</h1>
                 <div>
@@ -18,7 +19,7 @@ export default function () {
                             <input type="text" placeholder="Ingresa tu contraseña"/>
                         </div>
                         <div className="botonera">
-                            <button>Entrar</button>
+                            <button onClick={() => history.push("/admin/inicio")}>Entrar</button>
                         </div>
                     </form>
                 </div>
