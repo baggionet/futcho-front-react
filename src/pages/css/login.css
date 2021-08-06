@@ -1,4 +1,4 @@
-.container-login{
+.container-login, .container-registro{
     background-image: url("/src/pages/img/fondoLogin.jpg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
@@ -20,8 +20,18 @@
 }
 h1{
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     user-select: none;
+    text-align: center;
+    letter-spacing: 8px;
+}
+h3{
+    text-align: center;
+    margin-top: 0;
+    padding-top:0px;
+    user-select: none;
+    padding-bottom: 20px;
 }
 .grupo-usuario{
     user-select: none;
@@ -36,18 +46,42 @@ h1{
     border-radius: 10px;
     border: solid black 1px;
 }
-.botonera{
+.botonera-login{
     text-align: center;
 }
+.botonera-registro{
+    display: flex;
+    justify-content: space-between;
+}
 button{
+    margin-top: 1.5vw;
     background-color: rgb(8, 68, 250);
     color: white;
     font-size: 15px;
     font-weight: bold;
     padding: 8px 40px;
     border-radius: 10px;
+    border-color: rgb(8, 68, 250);
+    cursor: pointer;
 }
 button:hover{
     background-color: whitesmoke;
+    border-color: whitesmoke;
     color: rgb(8, 68, 250);
+}
+.registro{
+    margin-top: 3vw;
+    user-select: none;
+}
+.registro-item{
+    cursor: pointer;
+    color: rgb(8, 68, 250);
+    margin-left: 10px;
+}
+input{
+    width: 250px;
+}
+.label-registro{
+    margin-left: 8px;
+    margin-bottom: 5px;
 }

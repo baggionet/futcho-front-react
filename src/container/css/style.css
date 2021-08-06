@@ -35,7 +35,7 @@
     align-items: center;
     user-select: none;
     cursor: pointer;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 .profile-photo{
     width: 30px;
@@ -52,9 +52,7 @@
 }
 .main{
   flex: 1;  
-
 }
-
 .sidebar{
     padding-left: 5px;
     padding-top: 20px;
@@ -95,3 +93,31 @@
 .item-icon{
     margin-right: 10px;
 }
+.profile-user{
+    padding-top:5px;
+    padding-bottom: 20px;
+}
+.profile-user:hover ul{
+    display: block;
+}
+.profile-cuenta {
+    background-color: #15202b;
+    position: absolute;
+    top:3vw;
+    right: 2vw;
+    clip-path: polygon(50% 0, 60% 20%, 100% 20%, 100% 100%, 0 100%, 0 20%, 40% 20%);
+    padding-top: 2vw;
+    text-align: left;
+    padding-left: 1.5vw;
+    width: 8vw;
+    flex-direction: column;
+    display: none;
+}
+.profile-cuenta li{
+    margin-top: 1vw;
+    display: block;
+}
+.profile-cuenta li:hover{
+    color:blue;
+}
+

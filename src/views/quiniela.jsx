@@ -1,5 +1,7 @@
-import * as React from 'react';
+import React from 'react';
 
-export default function() {
+ function Quiniela() {
     return <div>Soy la vista de quiniela</div>
 }
+
+export default Quiniela;

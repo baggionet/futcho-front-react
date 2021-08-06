@@ -1,13 +1,12 @@
 .content-inicio{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+   
 }
 .jornadas{
     background-color: #C4C4C4;
     width: 60%;
     border-radius: 15px;
     padding-bottom: 20px;
+    margin-left: 10px;
 }
 .cabecera{
     background-color: #337AB7;
@@ -37,12 +36,7 @@ li{
     display: flex;
     align-items: center;
 }
-.local{
-    margin-right: 5px;
-}
-.visitante{
-    margin-left: 5px;
-}
+
 i{
     background-color: #595A5A;
     padding: 5px 25px;
@@ -52,10 +46,28 @@ i{
 .contenido{
     background-color: #C4C4C4;
 }
+.equipos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #0D5593;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.equipos-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.equipos-logo{
+   
+}
 .encabezado-tabla{
     font-weight: bolder;
-    margin-bottom: 20px;
-    border-bottom: 1px solid black;
     text-align: center;
     font-size: 13px;
 }
@@ -63,7 +75,7 @@ i{
     margin-top: 15px;
 
 }
-.partido-non{
+.partido{
     background-color: #0D5593;
     color: white;
 }
@@ -72,4 +84,37 @@ i{
     padding-bottom: 10px;
     margin:0;
     font-size: 12px;
+}
+.local{
+    width: 12vw;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+.imgLocal{
+    margin-right: 10px;
+}
+.visitante{
+    width: 12vw;
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.imgVisitante{
+    margin-left: 10px;
+}
+.fecha{
+    width: 5.5vw;
+    text-align: center;
+}
+.hora{
+    width: 7vw;
+    text-align: center;
+}
+.estadio{
+    width: 9.5vw;
+    text-align: center;
 }

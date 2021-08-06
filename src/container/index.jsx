@@ -33,7 +33,6 @@ export default function({history}) {
                         </React.Suspense>
                     </div>
                 </div>
-
             </DashboardContex.Provider>           
         </div>
     );
