@@ -15,8 +15,8 @@ function Registro({history}) {
     const onSubmit = async e => {
         
         e.preventDefault();
-        const r = await axios({
-            url: "http://localhost:5000/api/quiniela/usuario",
+            await axios({
+            url: "http://54.145.89.85:5000/api/quiniela/usuario",
             method: "POST",
             data: { name, email, nickName, password, rollId }
         })
@@ -32,15 +32,8 @@ function Registro({history}) {
                 alert(err.response.data);
             }
         })
-
-
-
-            
-           
-        
     }
 
-    
     return(
         <div className="container-registro">
 

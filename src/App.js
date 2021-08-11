@@ -25,7 +25,7 @@ function App() {
     localStorage.setItem("UserBalance", response.account.balance);
     localStorage.setItem("UserPreviousBalance", response.account.previousBalance);
     localStorage.setItem("token", token);
-    //setAuthToken(token);
+    setAuthToken(token);
   };
   return (
     <HashRouter>

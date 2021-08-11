@@ -12,7 +12,7 @@ function Login ({ history }) {
             e.preventDefault()
             console.log(email, password)
             await axios({
-                url: "http://localhost:5000/api/quiniela/auth/login",
+                url: "http://54.145.89.85:5000/api/quiniela/auth/login",
                 method: 'POST',
                 data: {email, password}
             })

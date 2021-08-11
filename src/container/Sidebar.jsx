@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {DashboardContex} from './index';
 
-export default function() {
+function Sidebar() {
     const { history, routes} = React.useContext(DashboardContex);
 
     return (
@@ -20,3 +20,5 @@ export default function() {
         </div>
         );
 }
+
+export default  Sidebar;

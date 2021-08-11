@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { Redirect } from 'react-router-dom';
 import ArrowBackIosRoundedIcon from '@material-ui/icons/ArrowBackIosRounded';
 import ArrowForwardIosRoundedIcon from '@material-ui/icons/ArrowForwardIosRounded';
 import './css/inicio.css';
 import axios from 'axios'
 
-const urlEquipos = "http://localhost:5000/api/quiniela/equipo";
-const  urlJornada = "http://localhost:5000/api/quiniela/jornada/"
+const urlEquipos = "http://54.145.89.85:5000/api/quiniela/equipo";
+const  urlJornada = "http://54.145.89.85:5000/api/quiniela/jornada/"
 
-export default function() {
+function Inicio() {
     const [ temporada, setTemporada ] = useState([])
     const [jornadas, setJornadas] = useState([])
     const [equipos, setEquipos] = useState([])
@@ -33,6 +34,12 @@ export default function() {
         showEquipos()
         selectJornada(count)
     }, []);
+
+    if(localStorage.length === 0){
+        return(
+            <Redirect to="/"/>
+        )
+    }else{
     return (
         <div className="content-inicio">
             <div className="equipos">
@@ -97,4 +104,7 @@ export default function() {
             </div>
         </div>
     )
+    }
 }
+
+export default Inicio;
